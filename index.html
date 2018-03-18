@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dynamic points</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-md-6">
+          <canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3"></canvas>
+    		</div>
+    		<div class="col-md-6">
+          <div class="row">
+            <h2>Modular multiplication around a circle</h2>
+          </div>
+    			<div class="row">
+    				<div class="col-md-12">
+              <h6>NUMBER OF POINTS :<span id="NoOfPointsOutput"></span></h6>
+              <input type="range" min="2" max="500" name="id=" value="125" id="NoOfPoints" oninput="NoOfPointsValueChange(this.value)">
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-12">
+              <h6>MULTIPLIER :<span id="MultipleOutput"></span></h6>
+              <input class="slidecontainer" type="range" min="0" max="50" name="Multiple" value="26" id="Multiple" oninput="abc(this.value)">
+    				</div>
+    			</div>
+          <div>(Change the value of NUMBER OF POINTS and MULTIPLIER to see the pattern)</div>
+    		</div>
+    	</div>
+    </div>
+    <script src="control.js"></script>
+  </body>
+</html>
